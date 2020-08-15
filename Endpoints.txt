@@ -1,0 +1,31 @@
+http://localhost:8080/api/v1/add-user
+
+{
+    "name" : "Bruce Wayne",
+    "address" : "Batcave",
+    "emailId" : "iambatman@dcuniverse.com",
+    "phoneNumber" : "12121212",
+    "username" : "iambatman",
+    "password" : "savemartha"
+}
+
+http://localhost:8080/api/v1/login-user
+
+{
+    "username" : "iambatman",
+    "password" : "savemartha"
+}
+
+http://localhost:8080/api/v1/unlock-user
+
+{
+    "username" : "iambatman"
+}
+
+http://localhost:8080/api/v2/add-bank-details
+
+{
+    "accountNumber" : "AA2211323rr23",
+    "bankName" : "Golden Bank AAA",
+    "userDetails" : { "username" : "harvey", "password" : "youknownothing"}
+}
