@@ -1,0 +1,194 @@
+{
+	"info": {
+		"_postman_id": "21915717-f70d-4e86-baca-587458cecb21",
+		"name": "Payment API's",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/v1/add-user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Bruce Wayne\",\r\n    \"address\" : \"Batcave\",\r\n    \"emailId\" : \"iambatman@dcuniverse.com\",\r\n    \"phoneNumber\" : \"12121212\",\r\n    \"username\" : \"iambatman\",\r\n    \"password\" : \"savemartha\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/add-user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"add-user"
+					]
+				},
+				"description": "Add User"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/v1/login-user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"iambatman\",\r\n    \"password\" : \"savemartha\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/login-user",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"login-user"
+					]
+				},
+				"description": "Login API"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/v1/unlock-user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"iambatman\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/unlock-user",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"unlock-user"
+					]
+				},
+				"description": "Unlock User API"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v2/add-bank-details",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"accountNumber\" : \"AA2211323rr23\",\r\n    \"bankName\" : \"Golden Bank AAA\",\r\n    \"userDetails\" : { \"username\" : \"harvey\", \"password\" : \"youknownothing\"}\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v2/add-bank-details",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v2",
+						"add-bank-details"
+					]
+				},
+				"description": "Add Bank Details"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v2/add-money",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"amount\" : 5500000,\r\n    \"fromAccountNumber\" : \"NA\",\r\n    \"comment\" : \"Adding Money to my Account\",\r\n    \"date\" : \"2020-02-02\",\r\n    \"bankDetails\" : {\r\n    \"accountNumber\" : \"AA2211323rr23\",\r\n    \"bankName\" : \"Golden Bank AAA\",\r\n    \"userDetails\" : { \"username\" : \"harvey\", \"password\" : \"youknownothing\"}\r\n}\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v2/add-money",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v2",
+						"add-money"
+					]
+				},
+				"description": "ADD Money"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v2/get-bank-details",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"accountNumber\": \"AA2211323rr23\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v2/get-bank-details",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v2",
+						"get-bank-details"
+					]
+				},
+				"description": "Get Bank Details"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
